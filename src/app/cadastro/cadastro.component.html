@@ -6,14 +6,14 @@
     <mat-card-content>
       <div class="row">
         <div class="col">
-          <mat-form-field class="full-width">
+          <mat-form-field class="full-width example-orange-primary-container" appearance="outline">
             <input matInput placeholder="Company" formControlName="company">
           </mat-form-field>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <mat-form-field class="full-width">
+          <mat-form-field class="full-width outlined-field" appearance="outline">
             <input matInput placeholder="First name" formControlName="firstName">
             @if (addressForm.controls['firstName'].hasError('required')) {
               <mat-error>First name is <strong>required</strong></mat-error>

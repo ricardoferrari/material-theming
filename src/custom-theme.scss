@@ -29,4 +29,15 @@ html {
   background-color: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
+
+  .outlined-field {
+    @include mat.form-field-overrides((
+      outlined-outline-width: 3px,
+      outlined-focus-outline-width: 4px,
+      outlined-input-text-color: light-dark(#33333c, #dddd5a),
+      outlined-focus-outline-color: rgb(10, 13, 202),
+      outlined-hover-outline-color: rgb(10, 13, 202),
+    ));
+  }
+
 }

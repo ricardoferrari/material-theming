@@ -1,3 +1,13 @@
+@use '@angular/material' as mat;
+
+.example-orange-primary-container {
+  @include mat.form-field-overrides((
+    outlined-outline-width: 3px,
+    outlined-focus-outline-width: 3px,
+    outlined-focus-outline-color: rgb(10, 13, 202),
+  ));
+}
+
 .full-width {
   width: 100%;
 }

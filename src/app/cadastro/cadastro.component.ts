@@ -11,7 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
-  styleUrl: './cadastro.component.css',
+  styleUrl: './cadastro.component.scss',
   imports: [
     MatInputModule,
     MatButtonModule,
