@@ -6,6 +6,7 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 @use './theme-colors.scss' as theme-colors;
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
 
 html {
   @include mat.theme((
@@ -13,7 +14,7 @@ html {
       primary: theme-colors.$primary-palette,
       tertiary: mat.$blue-palette,
     ),
-    typography: Roboto,
+    typography: "Bitcount Prop Single", system-ui: true,
     density: 0,
   ));
 
