@@ -40,4 +40,13 @@ html {
     ));
   }
 
+  mat-card {
+    @include mat.card-overrides((
+      outlined-outline-color: hsl(217, 40%, 32%),
+      outlined-outline-width: 5px,
+      outlined-container-color: light-dark(hsl(217, 40%, 90%), hsl(217, 40%, 22%)),
+      outlined-container-elevation: 4px,
+    ));
+  }
+
 }

@@ -6,7 +6,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { map, Observable, shareReplay } from 'rxjs';
 
 @Component({
@@ -18,6 +18,7 @@ import { map, Observable, shareReplay } from 'rxjs';
     MatListModule,
     MatSlideToggleModule,
     RouterOutlet,
+    RouterModule,
     AsyncPipe
   ],
   templateUrl: './app.html',
