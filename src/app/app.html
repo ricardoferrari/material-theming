@@ -24,6 +24,9 @@
       <span>Material Theming</span>
       <span class="toolbar-spacer"></span>
       <p><mat-slide-toggle labelPosition="before" (toggleChange)="toggleDarkMode()">{{ darkMode() ? 'Light Mode' : 'Dark Mode ' }}&nbsp;</mat-slide-toggle></p>
+      <button matMiniFab class="favorite-button" aria-label="Favorite" (click)="openDialog()">
+        <mat-icon>favorite</mat-icon>
+      </button>
     </mat-toolbar>
     <!-- Add Content Here -->
      <router-outlet></router-outlet>

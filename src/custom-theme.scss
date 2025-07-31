@@ -30,6 +30,10 @@ html {
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
 
+  .custom-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
   .outlined-field {
     @include mat.form-field-overrides((
       outlined-outline-width: 3px,
@@ -46,6 +50,15 @@ html {
       outlined-outline-width: 5px,
       outlined-container-color: light-dark(hsl(217, 40%, 90%), hsl(217, 40%, 22%)),
       outlined-container-elevation: 4px,
+    ));
+  }
+
+  * {
+    @include mat.dialog-overrides((
+      container-color: var(--mat-sys-surface-container-high),
+      subhead-color: red,
+      container-min-width: 800px,
+      container-elevation-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
     ));
   }
 
